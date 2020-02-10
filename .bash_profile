@@ -39,3 +39,32 @@ alias very=git
 alias wow='git status' 
 alias hogs="ps aux | sort -nk +4 | tail -n 20"
 alias perms="stat -c '%A %a %n'"
+alias untar='tar -zxvf'
+alias wget='wget -c'
+alias randpw='openssl rand -base64 20'
+alias cd..='cd ..'
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../../'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias iptlist='sudo /sbin/iptables -L -n -v --line-numbers'
+alias iptlistin='sudo /sbin/iptables -L INPUT -n -v --line-numbers'
+alias iptlistout='sudo /sbin/iptables -L OUTPUT -n -v --line-numbers'
+alias iptlistfw='sudo /sbin/iptables -l FORWARD -n -v --line-numbers'
+alias firewall=iptlist
+alias header='curl -I'
+alias headerc='curl -I --compress'
+alias rm='rm -I --perserve-root'
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+
+if [ $UID -ne 0 ]; then
+  alias reboot="sudo reboot"
+  alias update="sudo apt-get update && sudo apt-get upgrade"
+fi
