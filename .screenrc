@@ -18,9 +18,9 @@ mousetrack on
 
 # default windows
 screen -t Shell1  1 bash
-screen -t Shell2  2 bash
-screen -t Python  3 python
-screen -t Media   4 bash
+#screen -t Shell2  2 bash
+#screen -t Python  3 python
+#screen -t Media   4 bash
 select 0
 bind c screen 1 # window numbering starts at 1 not 0
 bind 0 select 10
@@ -83,3 +83,5 @@ bind -c rsz -k kl eval "focus left"  "command -c rsz" # Left
 bind -c rsz -k kr eval "focus right" "command -c rsz" # Right
 bind -c rsz -k ku eval "focus up"    "command -c rsz" # Up
 bind -c rsz -k kd eval "focus down"  "command -c rsz" # Down
+source .screen_layout
+layout save def

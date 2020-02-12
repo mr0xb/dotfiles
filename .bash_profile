@@ -1,3 +1,6 @@
+#if [ -f $HOME/.bashrc ]; then
+#  . "$HOME/.bashrc"
+#fi
 export GOPATH=$HOME/go_projects
 export PATH=$PATH:/usr/local/go/bin
 alias fp='stat --format "%a"'
@@ -34,6 +37,7 @@ function myip {
   echo # Newline.
 }
 
+git-random(){ gitRan=$(curl -L -s http://whatthecommit.com/ |grep -A 1 "\"c" |tail -1 |sed 's/<p>//'); git commit -m "$gitRan"; }
 alias such=git
 alias very=git
 alias wow='git status' 
