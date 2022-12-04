@@ -1,0 +1,3 @@
+#alacritty
+alt + z
+    tdrop -n top --width 100% --height 65% --post-map-hook 'wmctrl -r "Alacritty - Drop Down - Top" -b add,above,sticky' alacritty --title 'Alacritty - Drop Down - Top'
