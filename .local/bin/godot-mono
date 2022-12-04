@@ -1,0 +1,1 @@
+nohup $HOME/.local/share/Godot3.5_Mono/Godot_v3.5.1-stable_mono_x11.64 > /dev/null 2>&1 & disown

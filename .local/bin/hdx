@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+#while read data; do
+data=$1
+withoutQuotes=`echo ${data} | sed s/\"//g`
+without0x=`echo ${withoutQuotes} | sed s/0x//g`
+clean=${without0x}
+echo $((16#${clean}))
+#done
