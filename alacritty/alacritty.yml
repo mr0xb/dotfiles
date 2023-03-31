@@ -1,0 +1,38 @@
+shell:
+  program: /usr/bin/zsh
+
+import:
+    - ~/.config/alacritty/themes/dracula.yml
+    - ~/.config/alacritty/bindings.yml
+
+cursor:
+  style: Block
+
+hints:
+  enabled:
+    - regex: "(mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-\u009F<>\" {-}\\^⟨⟩`]+"
+      command: xdg-open
+      post_processing: true
+      mouse:
+        mods: Control|Shift
+
+window:
+  opacity: 0.9
+  padding:
+    x: 5
+    y: 5
+
+scrolling:
+  history: 100000
+  multiplier: 3
+
+font:
+  normal:
+    family: "FuraMono Nerd Font Mono"
+    style: Regular
+  bold:
+    family: "FuraMono Nerd Font Mono"
+    style: Bold
+  italic:
+    family: "FuraMono Nerd Font Mono"
+    style: Bold
