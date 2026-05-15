@@ -1,0 +1,68 @@
+{
+  "name": "Challenger Deep",
+  "base": "dark",
+  "overrides": {
+    "claude":         "#906cff",
+    "claudeShimmer":  "#c991e1",
+    "text":           "#cbe3e7",
+    "inverseText":    "#100e23",
+    "inactive":       "#a6b3cc",
+    "inactiveShimmer":"#cbe3e7",
+    "subtle":         "#5a5475",
+    "suggestion":     "#c991e1",
+    "permission":     "#ffe9aa",
+    "permissionShimmer":"#ffb378",
+    "remember":       "#63f2f1",
+
+    "success":        "#62d196",
+    "error":          "#ff5458",
+    "warning":        "#ffb378",
+    "warningShimmer": "#ffe9aa",
+    "merged":         "#906cff",
+
+    "promptBorder":        "#906cff",
+    "promptBorderShimmer": "#c991e1",
+    "planMode":     "#63f2f1",
+    "autoAccept":   "#62d196",
+    "bashBorder":   "#ffb378",
+    "ide":          "#91ddff",
+    "fastMode":     "#c991e1",
+    "fastModeShimmer":"#aaffe4",
+
+    "diffAdded":         "#1f3a2a",
+    "diffRemoved":       "#3a1f23",
+    "diffAddedDimmed":   "#1a2e22",
+    "diffRemovedDimmed": "#2e1a1d",
+    "diffAddedWord":     "#2c5a40",
+    "diffRemovedWord":   "#5a2c30",
+
+    "userMessageBackground":      "#2a2640",
+    "userMessageBackgroundHover": "#3b3470",
+    "messageActionsBackground":   "#3b3470",
+    "bashMessageBackgroundColor": "#2c281a",
+    "memoryBackgroundColor":      "#1f2c3a",
+    "selectionBg":                "#3b3470",
+
+    "rate_limit_fill":  "#906cff",
+    "rate_limit_empty": "#3b3470",
+    "briefLabelYou":    "#ffe9aa",
+    "briefLabelClaude": "#906cff",
+
+    "red_FOR_SUBAGENTS_ONLY":    "#ff5458",
+    "blue_FOR_SUBAGENTS_ONLY":   "#65b2ff",
+    "green_FOR_SUBAGENTS_ONLY":  "#62d196",
+    "yellow_FOR_SUBAGENTS_ONLY": "#ffe9aa",
+    "purple_FOR_SUBAGENTS_ONLY": "#906cff",
+    "orange_FOR_SUBAGENTS_ONLY": "#ffb378",
+    "pink_FOR_SUBAGENTS_ONLY":   "#c991e1",
+    "cyan_FOR_SUBAGENTS_ONLY":   "#63f2f1",
+
+    "rainbow_red":    "#ff5458",
+    "rainbow_orange": "#ffb378",
+    "rainbow_yellow": "#ffe9aa",
+    "rainbow_green":  "#62d196",
+    "rainbow_blue":   "#65b2ff",
+    "rainbow_indigo": "#906cff",
+    "rainbow_violet": "#c991e1"
+  }
+}
