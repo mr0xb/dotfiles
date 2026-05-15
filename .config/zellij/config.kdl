@@ -1,0 +1,8 @@
+// Zellij configuration
+// Reference: https://zellij.dev/documentation/options
+
+theme "challengerdeep"
+
+// macOS clipboard integration
+copy_command "pbcopy"
+copy_clipboard "system"

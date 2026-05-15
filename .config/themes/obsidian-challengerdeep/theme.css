@@ -1,0 +1,194 @@
+/*
+ * Challenger Deep theme for Obsidian
+ * Palette: https://github.com/challenger-deep-theme/themes
+ *
+ * Dark only — switching Obsidian to light mode falls back to Obsidian's default
+ * light theme rather than producing washed-out garbage.
+ */
+
+.theme-dark {
+  /* ---------------- Surfaces ---------------- */
+  --background-primary:                         #1b182c;
+  --background-primary-alt:                     #2a2640;
+  --background-secondary:                       #16131f;
+  --background-secondary-alt:                   #100e23;
+  --background-modifier-border:                 #3b3470;
+  --background-modifier-border-hover:           #5a5475;
+  --background-modifier-border-focus:           #906cff;
+  --background-modifier-form-field:             #2a2640;
+  --background-modifier-form-field-highlighted: #3b3470;
+  --background-modifier-box-shadow:             rgba(0, 0, 0, 0.5);
+  --background-modifier-success:                #62d196;
+  --background-modifier-error:                  #ff5458;
+  --background-modifier-error-rgb:              255, 84, 88;
+  --background-modifier-error-hover:            #ff8080;
+  --background-modifier-cover:                  rgba(16, 14, 35, 0.6);
+  --background-modifier-hover:                  #2a2640;
+  --background-modifier-active-hover:           #3b3470;
+
+  /* ---------------- Text ---------------- */
+  --text-normal:        #cbe3e7;
+  --text-muted:         #a6b3cc;
+  --text-faint:         #5a5475;
+  --text-on-accent:     #100e23;
+  --text-error:         #ff5458;
+  --text-error-hover:   #ff8080;
+  --text-warning:       #ffb378;
+  --text-success:       #62d196;
+  --text-accent:        #c991e1;
+  --text-accent-hover:  #906cff;
+  --text-selection:     rgba(144, 108, 255, 0.35);
+  --text-highlight-bg:        rgba(255, 233, 170, 0.25);
+  --text-highlight-bg-active: rgba(255, 233, 170, 0.50);
+
+  /* ---------------- Interactive ---------------- */
+  --interactive-normal:        #2a2640;
+  --interactive-hover:         #3b3470;
+  --interactive-accent:        #906cff;
+  --interactive-accent-rgb:    144, 108, 255;
+  --interactive-accent-hover:  #c991e1;
+  --interactive-success:       #62d196;
+
+  /* ---------------- Headings (rotate through palette) ---------------- */
+  --h1-color: #c991e1;  /* magenta      */
+  --h2-color: #91ddff;  /* blue         */
+  --h3-color: #63f2f1;  /* dark_cyan    */
+  --h4-color: #62d196;  /* dark_green   */
+  --h5-color: #ffe9aa;  /* yellow       */
+  --h6-color: #ffb378;  /* dark_yellow  */
+
+  /* ---------------- Inline code & code blocks ---------------- */
+  --code-normal:      #cbe3e7;
+  --code-comment:     #a6b3cc;
+  --code-string:      #95ffa4;
+  --code-keyword:     #906cff;
+  --code-function:    #ffe9aa;
+  --code-property:    #91ddff;
+  --code-tag:         #c991e1;
+  --code-attribute:   #91ddff;
+  --code-value:       #ffb378;
+  --code-operator:    #cbe3e7;
+  --code-punctuation: #a6b3cc;
+  --code-important:   #ff5458;
+  --code-modifier:    #c991e1;
+  --code-character:   #ffb378;
+  --code-block-bg:    #100e23;
+  --code-background:  #100e23;
+
+  /* ---------------- Tags ---------------- */
+  --tag-color:            #c991e1;
+  --tag-color-hover:      #906cff;
+  --tag-background:       rgba(201, 145, 225, 0.15);
+  --tag-background-hover: rgba(201, 145, 225, 0.25);
+
+  /* ---------------- Block quotes ---------------- */
+  --blockquote-border-color: #906cff;
+  --blockquote-color:        #a6b3cc;
+
+  /* ---------------- Tabs ---------------- */
+  --tab-background-active:               #2a2640;
+  --tab-text-color:                      #a6b3cc;
+  --tab-text-color-active:               #cbe3e7;
+  --tab-text-color-focused-active:       #cbe3e7;
+  --tab-text-color-focused-active-current: #cbe3e7;
+  --tab-outline-color:                   #3b3470;
+
+  /* ---------------- Titlebar / ribbon / status bar ---------------- */
+  --titlebar-background:         #16131f;
+  --titlebar-background-focused: #1b182c;
+  --titlebar-text-color:         #cbe3e7;
+  --titlebar-border-color:       #100e23;
+
+  --ribbon-background:           #16131f;
+  --ribbon-background-collapsed: #16131f;
+
+  --status-bar-background:       #16131f;
+  --status-bar-text-color:       #a6b3cc;
+  --status-bar-border-color:     #100e23;
+
+  /* ---------------- Scrollbars ---------------- */
+  --scrollbar-bg:               transparent;
+  --scrollbar-thumb-bg:         #3b3470;
+  --scrollbar-active-thumb-bg:  #5a5475;
+
+  /* ---------------- Graph view ---------------- */
+  --graph-line:              #3b3470;
+  --graph-node:              #cbe3e7;
+  --graph-node-unresolved:   #5a5475;
+  --graph-node-tag:          #c991e1;
+  --graph-node-attachment:   #ffb378;
+  --graph-text:              #a6b3cc;
+
+  /* ---------------- Checkboxes ---------------- */
+  --checkbox-color:              #906cff;
+  --checkbox-color-hover:        #c991e1;
+  --checkbox-border-color:       #3b3470;
+  --checkbox-border-color-hover: #906cff;
+  --checkbox-marker-color:       #100e23;
+
+  /* ---------------- Callouts (RGB tuples — Obsidian's contract) ---------------- */
+  --callout-default:  144, 108, 255;
+  --callout-info:     145, 221, 255;
+  --callout-todo:      99, 242, 241;
+  --callout-tip:       99, 242, 241;
+  --callout-success:   98, 209, 150;
+  --callout-question: 255, 233, 170;
+  --callout-warning:  255, 179, 120;
+  --callout-failure:  255,  84,  88;
+  --callout-danger:   255,  84,  88;
+  --callout-bug:      255, 128, 128;
+  --callout-example:  201, 145, 225;
+  --callout-quote:    166, 179, 204;
+  --callout-note:     145, 221, 255;
+  --callout-abstract:  99, 242, 241;
+  --callout-summary:   99, 242, 241;
+  --callout-tldr:      99, 242, 241;
+  --callout-check:     98, 209, 150;
+  --callout-done:      98, 209, 150;
+  --callout-help:     255, 233, 170;
+  --callout-faq:      255, 233, 170;
+  --callout-attention: 255, 179, 120;
+  --callout-caution:  255, 179, 120;
+  --callout-fail:     255,  84,  88;
+  --callout-missing:  255,  84,  88;
+  --callout-error:    255,  84,  88;
+  --callout-cite:     166, 179, 204;
+
+  /* ---------------- Modal & search ---------------- */
+  --modal-background:       #1b182c;
+  --modal-border-color:     #3b3470;
+
+  --search-result-background: rgba(144, 108, 255, 0.15);
+  --search-clear-button-color: #a6b3cc;
+
+  /* ---------------- Indentation guides & active line ---------------- */
+  --indentation-guide:        #3b3470;
+  --indentation-guide-active: #906cff;
+}
+
+/* ===================================================================
+ * Selectors for things CSS variables don't cover
+ * =================================================================== */
+
+/* Active editor line tint (CodeMirror 6) */
+.theme-dark .markdown-source-view.mod-cm6 .cm-active.cm-line {
+  background-color: rgba(59, 52, 112, 0.35);
+}
+
+/* Active workspace tab — accent strip on the bottom */
+.theme-dark .workspace-tab-header.is-active::after {
+  background-color: var(--interactive-accent);
+}
+
+/* External-link arrow tint */
+.theme-dark .external-link {
+  background-image: linear-gradient(transparent, transparent);
+  color: var(--text-accent);
+}
+
+/* Subtle gradient under selected file in the file explorer */
+.theme-dark .nav-file-title.is-active,
+.theme-dark .nav-folder-title.is-active {
+  background-color: rgba(144, 108, 255, 0.18);
+  color: var(--text-normal);
+}

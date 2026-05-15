@@ -1,0 +1,48 @@
+import = [
+	"/Users/steve.briggs/.config/alacritty/themes/hardhacker.toml", 
+#	"/Users/steve.briggs/.config/alacritty/themes/twdark.toml", 
+	"/Users/steve.briggs/.config/alacritty/bindings.toml"
+]
+
+[cursor]
+style = "Block"
+
+[font]
+size = 18
+
+[font.bold]
+family = "MesloLGS NF"
+style = "Bold"
+
+[font.italic]
+family = "MesloLGS NF"
+style = "Bold"
+
+[font.normal]
+family = "MesloLGS NF"
+style = "Regular"
+
+[[hints.enabled]]
+command = "open"
+post_processing = true
+regex = "(mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\" {-}\\^⟨⟩`]+"
+
+[hints.enabled.mouse]
+mods = "Control|Shift"
+
+[scrolling]
+history = 100000
+multiplier = 3
+
+[selection]
+save_to_clipboard = true
+
+[shell]
+program = "/bin/zsh"
+
+[window]
+opacity = 0.9
+
+[window.padding]
+x = 5
+y = 5

@@ -1,0 +1,41 @@
+shell:
+  program: /bin/zsh
+
+import:
+    - ~/.config/alacritty/themes/dracula.yml
+    - ~/.config/alacritty/bindings.yml
+
+cursor:
+  style: Block
+
+selection:
+  save_to_clipboard: true
+hints:
+  enabled:
+    - regex: "(mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-\u009F<>\" {-}\\^⟨⟩`]+"
+      command: open
+      post_processing: true
+      mouse:
+        mods: Control|Shift
+
+window:
+  opacity: 0.9
+  padding:
+    x: 5
+    y: 5
+
+scrolling:
+  history: 100000
+  multiplier: 3
+
+font:
+  size: 18
+  normal:
+    family: "MesloLGS NF"
+    style: Regular
+  bold:
+    family: "MesloLGS NF"
+    style: Bold
+  italic:
+    family: "MesloLGS NF"
+    style: Bold

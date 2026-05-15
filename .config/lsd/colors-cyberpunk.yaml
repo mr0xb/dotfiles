@@ -1,0 +1,28 @@
+# Cyberpunk Theme for lsd
+user: magenta
+group: cyan
+permission:
+  read: green
+  write: yellow
+  exec: red
+  exec-sticky: magenta
+  no-access: dark_grey
+  octal: magenta
+  acl: cyan
+  context: cyan
+date:
+  hour-old: magenta
+  day-old: cyan
+  older: dark_grey
+size:
+  none: dark_grey
+  small: green
+  medium: yellow
+  large: magenta
+inode:
+  valid: cyan
+  invalid: red
+links:
+  valid: magenta
+  invalid: red
+tree-edge: cyan

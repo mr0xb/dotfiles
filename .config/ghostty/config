@@ -1,0 +1,13 @@
+background-blur-radius = 15 
+background-opacity = 0.9
+#theme = dark:cyberdream, light:cyberdream-light
+theme = challengerdeep
+#window-theme = system
+
+#font-family = "MesloLGS Nerd Font Mono"
+font-family = "IBM Plex Mono"
+font-size = 16
+
+macos-option-as-alt = true
+macos-titlebar-style = transparent
+macos-titlebar-proxy-icon = hidden

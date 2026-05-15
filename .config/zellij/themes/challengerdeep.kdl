@@ -1,0 +1,20 @@
+// Challenger Deep theme for Zellij
+// Palette: https://github.com/challenger-deep-theme/themes
+// Activate by adding to ~/.config/zellij/config.kdl:
+//     theme "challengerdeep"
+
+themes {
+    challengerdeep {
+        fg      "#cbe3e7"  // foreground
+        bg      "#1b182c"  // background
+        black   "#100e23"  // black
+        red     "#ff5458"  // dark_red
+        green   "#62d196"  // dark_green
+        yellow  "#ffe9aa"  // yellow
+        blue    "#65b2ff"  // dark_blue
+        magenta "#906cff"  // dark_magenta
+        cyan    "#63f2f1"  // dark_cyan
+        white   "#cbe3e7"  // foreground
+        orange  "#ffb378"  // dark_yellow (warm accent)
+    }
+}

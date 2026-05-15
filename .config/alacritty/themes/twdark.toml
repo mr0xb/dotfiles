@@ -1,0 +1,34 @@
+# hardhacker colorscheme for alacritty
+# by xin wu, https//github.com/hardhackerlabs/theme-alacritty
+
+# Default colors
+[colors.primary]
+background = '#282433'
+foreground = '#eee9fc'
+
+[colors.cursor]
+text = '#eee9fc'
+cursor = '#eee9fc'
+
+# Normal colors
+[colors.normal]
+black   = '#282433'
+red     = '#ff5452'
+green   = '#bdde6e'
+yellow  = '#ffff00'
+blue    = '#5509ab'
+magenta = '#9147ff'
+cyan    = '#6fc9ff'
+white   = '#eee9fc'
+
+# Bright colors
+[colors.bright]
+black   = '#3f3951'
+red     = '#ff5452'
+green   = '#bdde6e'
+yellow  = '#ffff00'
+blue    = '#5509ab'
+magenta = '#9147ff'
+cyan    = '#6fc9ff'
+white   = '#eee9fc'
+
