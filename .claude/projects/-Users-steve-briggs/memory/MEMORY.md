@@ -1,0 +1,1 @@
+- [Vector pipeline initiative — driver](project_vector_pipeline_driver.md) — self-hosted Vector is being evaluated to avoid paying for DD's sensitive data scanner specifically, not full DD replacement

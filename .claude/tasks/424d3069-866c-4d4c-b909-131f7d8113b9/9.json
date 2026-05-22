@@ -1,0 +1,9 @@
+{
+  "id": "9",
+  "subject": "Task 9: Export key and store in 1Password (manual)",
+  "description": "git-crypt export-key ~/vault.key. User stores in 1Password. Then securely delete the temp file.",
+  "activeForm": "Exporting key for 1Password storage",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

@@ -1,0 +1,1 @@
+- [Platform-tier components use Terraform, not Flux](feedback_platform_components_use_terraform.md) — for `eks-cluster-applications` plumbing, default to TF/helm provider; Flux is for apps

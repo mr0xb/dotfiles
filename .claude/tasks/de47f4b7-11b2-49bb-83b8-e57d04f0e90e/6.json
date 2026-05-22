@@ -1,0 +1,8 @@
+{
+  "id": "6",
+  "subject": "Spec self-review + user review",
+  "description": "Inline check for placeholders/contradictions/scope, then ask user to review the spec file",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

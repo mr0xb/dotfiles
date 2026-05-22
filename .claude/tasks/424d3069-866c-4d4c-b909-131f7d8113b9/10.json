@@ -1,0 +1,9 @@
+{
+  "id": "10",
+  "subject": "Task 10: Pre-flight check before first commit",
+  "description": "Inspect git status, re-run hook test, run hook directly to confirm exit 0.",
+  "activeForm": "Running pre-flight checks",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

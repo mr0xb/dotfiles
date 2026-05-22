@@ -1,0 +1,2 @@
+- [televibe project](project_televibe.md) — greenfield Go Teleport access plugin with AI risk scoring + conditional ITSM ticketing
+- [user role](user_role.md) — Steve Briggs @ Immuta; platform/security-eng context, Go-fluent, prefers terse decisive proposals

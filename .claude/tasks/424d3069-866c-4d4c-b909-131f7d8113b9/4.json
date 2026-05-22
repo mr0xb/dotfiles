@@ -1,0 +1,9 @@
+{
+  "id": "4",
+  "subject": "Task 4: Install git-crypt and initialize",
+  "description": "brew install git-crypt, run git-crypt init, verify .git/git-crypt/keys/default exists.",
+  "activeForm": "Installing and initializing git-crypt",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

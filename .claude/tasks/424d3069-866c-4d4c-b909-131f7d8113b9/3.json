@@ -1,0 +1,9 @@
+{
+  "id": "3",
+  "subject": "Task 3: Create .gitattributes for git-crypt",
+  "description": "Write .gitattributes with filter=git-crypt patterns for md/canvas/images/pdf; verify with git check-attr.",
+  "activeForm": "Creating .gitattributes",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

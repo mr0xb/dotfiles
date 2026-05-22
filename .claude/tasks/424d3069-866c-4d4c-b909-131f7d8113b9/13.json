@@ -1,0 +1,9 @@
+{
+  "id": "13",
+  "subject": "Task 13: Verify ciphertext on GitHub",
+  "description": "User opens an .md file on GitHub, confirms binary blob output, not plaintext.",
+  "activeForm": "Verifying ciphertext on GitHub",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

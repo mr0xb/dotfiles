@@ -1,0 +1,9 @@
+{
+  "id": "6",
+  "subject": "Task 6: Write the pre-push hook",
+  "description": "Create hooks/pre-push, symlink into .git/hooks, run the test and confirm 3/3 pass.",
+  "activeForm": "Writing pre-push hook",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

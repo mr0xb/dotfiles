@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "Task 1: Initialize git repository",
+  "description": "git init in the obsidian vault, verify clean state, ensure branch is `main`.",
+  "activeForm": "Initializing git repository",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

@@ -1,0 +1,9 @@
+{
+  "id": "5",
+  "subject": "Task 5: Write failing test for pre-push hook",
+  "description": "Create tests/test-pre-push-hook.sh with three scenarios; confirm it fails because the hook doesn't exist yet.",
+  "activeForm": "Writing pre-push hook test",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

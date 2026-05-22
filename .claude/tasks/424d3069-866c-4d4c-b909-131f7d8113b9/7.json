@@ -1,0 +1,9 @@
+{
+  "id": "7",
+  "subject": "Task 7: Sanity-check encryption with a test note",
+  "description": "Create a temporary note, stage it, verify the staged blob starts with \\0GITCRYPT, working tree stays plaintext, then remove.",
+  "activeForm": "Sanity-checking encryption",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

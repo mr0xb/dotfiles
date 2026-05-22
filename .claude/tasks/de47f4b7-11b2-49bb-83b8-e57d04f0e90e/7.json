@@ -1,0 +1,8 @@
+{
+  "id": "7",
+  "subject": "Hand off to writing-plans skill",
+  "description": "Invoke writing-plans to produce implementation plan once spec is approved",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

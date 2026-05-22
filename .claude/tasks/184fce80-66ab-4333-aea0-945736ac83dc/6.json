@@ -1,0 +1,8 @@
+{
+  "id": "6",
+  "subject": "Write design doc",
+  "description": "Save to docs/superpowers/specs/YYYY-MM-DD-heapoverflow-design.md and commit",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

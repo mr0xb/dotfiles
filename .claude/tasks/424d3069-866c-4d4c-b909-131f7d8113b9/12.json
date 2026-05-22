@@ -1,0 +1,9 @@
+{
+  "id": "12",
+  "subject": "Task 12: Create GitHub repo and push (manual auth)",
+  "description": "User creates private repo via gh CLI or web UI, sets origin, pushes, hook gates the push.",
+  "activeForm": "Creating GitHub repo and pushing",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

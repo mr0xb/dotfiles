@@ -1,0 +1,9 @@
+{
+  "id": "11",
+  "subject": "Task 11: Initial commit",
+  "description": "git add ., verify staged content, optionally spot-check encrypted blob, commit.",
+  "activeForm": "Making initial commit",
+  "status": "in_progress",
+  "blocks": [],
+  "blockedBy": []
+}

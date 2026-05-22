@@ -1,0 +1,9 @@
+{
+  "id": "2",
+  "subject": "Task 2: Create .gitignore",
+  "description": "Write .gitignore with Obsidian churn and OS noise entries; verify it ignores test files.",
+  "activeForm": "Creating .gitignore",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}
