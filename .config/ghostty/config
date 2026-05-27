@@ -1,0 +1,28 @@
+background-blur-radius = 15 
+background-opacity = 0.9
+#theme = dark:cyberdream, light:cyberdream-light
+#theme = challengerdeep
+theme = "Challenger Deep"
+
+#window-theme = system
+
+#font-family = "MesloLGS Nerd Font Mono"
+font-family = "IBM Plex Mono"
+font-size = 20
+
+window-padding-x = 10
+window-padding-y = 10
+window-decoration = true
+cursor-style = block
+adjust-cell-height = 35%
+mouse-scroll-multiplier = 2
+copy-on-select = clipboard
+window-padding-balance = true
+window-save-state = always
+background-opacity = 0.8
+window-colorspace = "display-p3"
+background-blur = 30
+
+macos-option-as-alt = true
+macos-titlebar-style = transparent
+macos-titlebar-proxy-icon = hidden

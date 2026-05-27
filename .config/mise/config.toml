@@ -1,0 +1,15 @@
+[tools]
+awscli = { version = "latest", symlink_bins = "true" }
+fzf = "latest"
+go = "1.26.3"
+kubecolor = "latest"
+kubectl = "latest"
+kubectx = "latest"
+kubens = "latest"
+lsd = "latest"
+opensearch-cli = "latest"
+ripgrep = "latest"
+starship = "latest"
+teleport-ent = "latest"
+terraform = "1.9.8"
+zellij = "latest"

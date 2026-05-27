@@ -1,0 +1,49 @@
+# Challenger Deep theme for lsd
+# Palette: https://github.com/challenger-deep-theme/themes
+# Activate by replacing colors.yaml (lsd's `theme: custom` reads that path).
+
+user:  [255, 233, 170]    # yellow         #ffe9aa
+group: [255, 179, 120]    # dark_yellow    #ffb378
+
+permission:
+  read:        [98, 209, 150]    # dark_green     #62d196
+  write:       [255, 179, 120]   # dark_yellow    #ffb378
+  exec:        [255, 84, 88]     # dark_red       #ff5458
+  exec-sticky: [201, 145, 225]   # magenta        #c991e1
+  no-access:   [166, 179, 204]   # gray           #a6b3cc
+  octal:       [144, 108, 255]   # dark_magenta   #906cff
+  acl:         [99, 242, 241]    # dark_cyan      #63f2f1
+  context:     [170, 255, 228]   # cyan           #aaffe4
+
+date:
+  hour-old: [149, 255, 164]   # green          #95ffa4
+  day-old:  [98, 209, 150]    # dark_green     #62d196
+  older:    [166, 179, 204]   # gray           #a6b3cc
+
+size:
+  none:   [166, 179, 204]   # gray           #a6b3cc
+  small:  [255, 233, 170]   # yellow         #ffe9aa
+  medium: [255, 179, 120]   # dark_yellow    #ffb378
+  large:  [255, 128, 128]   # red            #ff8080
+
+inode:
+  valid:   [201, 145, 225]  # magenta        #c991e1
+  invalid: [166, 179, 204]  # gray           #a6b3cc
+
+links:
+  valid:   [145, 221, 255]  # blue           #91ddff
+  invalid: [166, 179, 204]  # gray           #a6b3cc
+
+tree-edge: [166, 179, 204]  # gray           #a6b3cc
+
+git-status:
+  default:        [166, 179, 204]  # gray
+  unmodified:     [166, 179, 204]  # gray
+  ignored:        dark_grey        # named — palette has no dim variant
+  new-in-index:   [98, 209, 150]   # dark_green
+  new-in-workdir: [149, 255, 164]  # green
+  typechange:     [255, 179, 120]  # dark_yellow
+  deleted:        [255, 84, 88]    # dark_red
+  renamed:        [170, 255, 228]  # cyan
+  modified:       [255, 233, 170]  # yellow
+  conflicted:     [255, 128, 128]  # red

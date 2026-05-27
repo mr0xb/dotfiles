@@ -1,0 +1,21 @@
+Challenger Deep — Slack custom sidebar theme
+Palette: https://github.com/challenger-deep-theme/themes
+
+To install: Slack → Preferences → Themes → scroll to bottom →
+"Create a new theme" → paste the line below into "Copy & paste theme values":
+
+#1b182c,#3b3470,#906cff,#100e23,#2a2640,#cbe3e7,#62d196,#ff5458
+
+Slot-by-slot mapping (in order):
+
+  1. Column BG          #1b182c   palette background — main sidebar
+  2. Menu BG Hover      #3b3470   derived selection mid-tone — dropdown hover
+  3. Active Item        #906cff   dark_magenta — signature accent for the
+                                  "you are here" channel pill
+  4. Active Item Text   #100e23   palette black — high-contrast text on the
+                                  bright accent pill
+  5. Hover Item         #2a2640   derived elevated surface — subtle channel-
+                                  list hover, deliberately understated
+  6. Text Color         #cbe3e7   palette foreground — sidebar text
+  7. Active Presence    #62d196   dark_green — the "online" dot
+  8. Mention Badge      #ff5458   dark_red — unread mention pip

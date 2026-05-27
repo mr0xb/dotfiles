@@ -1,0 +1,95 @@
+# Challenger Deep theme for btop
+# Palette: https://github.com/challenger-deep-theme/themes
+# Activate by setting `color_theme = "challengerdeep"` in ~/.config/btop/btop.conf,
+# or pick "challengerdeep" from btop's options menu (press `o`, then Theme).
+
+# Main background (palette background #1b182c).
+# Set to "" if you'd prefer the terminal's own bg / transparency.
+theme[main_bg]="#1b182c"
+
+# Main text color (palette foreground)
+theme[main_fg]="#cbe3e7"
+
+# Title color for boxes
+theme[title]="#cbe3e7"
+
+# Highlight color for keyboard shortcuts (magenta accent)
+theme[hi_fg]="#c991e1"
+
+# Background color of selected item in processes box (derived selection mid-tone)
+theme[selected_bg]="#3b3470"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#cbe3e7"
+
+# Color of inactive/disabled text (derived dim)
+theme[inactive_fg]="#5a5475"
+
+# Color of text appearing on top of graphs (uptime, network scaling, etc.)
+theme[graph_text]="#cbe3e7"
+
+# Background color of the percentage meters (track behind the fill)
+theme[meter_bg]="#3b3470"
+
+# Misc colors for processes box (mini cpu graphs, details memory graph, status text)
+theme[proc_misc]="#906cff"
+
+# CPU box outline (dark_magenta — signature accent)
+theme[cpu_box]="#906cff"
+
+# Memory/disks box outline (dark_green)
+theme[mem_box]="#62d196"
+
+# Net up/down box outline (dark_red — distinct from other boxes)
+theme[net_box]="#ff5458"
+
+# Processes box outline (dark_cyan)
+theme[proc_box]="#63f2f1"
+
+# Box divider line and small boxes line color
+theme[div_line]="#3b3470"
+
+# Temperature graph: cool → warm → hot
+theme[temp_start]="#63f2f1"  # dark_cyan (cool)
+theme[temp_mid]="#ffb378"    # dark_yellow (warm)
+theme[temp_end]="#ff5458"    # dark_red (hot)
+
+# CPU graph: idle → busy → maxed (severity)
+theme[cpu_start]="#62d196"   # dark_green
+theme[cpu_mid]="#ffb378"     # dark_yellow
+theme[cpu_end]="#ff5458"     # dark_red
+
+# Mem/Disk free meter (green family — free = good)
+theme[free_start]="#62d196"  # dark_green
+theme[free_mid]="#95ffa4"    # green
+theme[free_end]="#aaffe4"    # cyan
+
+# Mem/Disk cached meter (cyan/blue family)
+theme[cached_start]="#63f2f1" # dark_cyan
+theme[cached_mid]="#aaffe4"   # cyan
+theme[cached_end]="#91ddff"   # blue
+
+# Mem/Disk available meter (warm yellow → cyan family)
+theme[available_start]="#ffb378" # dark_yellow
+theme[available_mid]="#ffe9aa"   # yellow
+theme[available_end]="#aaffe4"   # cyan
+
+# Mem/Disk used meter (severity — used = warning)
+theme[used_start]="#ffe9aa"  # yellow
+theme[used_mid]="#ffb378"    # dark_yellow
+theme[used_end]="#ff5458"    # dark_red
+
+# Download graph (blue family — incoming)
+theme[download_start]="#65b2ff" # dark_blue
+theme[download_mid]="#91ddff"   # blue
+theme[download_end]="#aaffe4"   # cyan
+
+# Upload graph (magenta family — outgoing)
+theme[upload_start]="#906cff"  # dark_magenta
+theme[upload_mid]="#c991e1"    # magenta
+theme[upload_end]="#aaffe4"    # cyan
+
+# Process box gradient (signature ChallengerDeep ramp)
+theme[process_start]="#906cff" # dark_magenta
+theme[process_mid]="#c991e1"   # magenta
+theme[process_end]="#63f2f1"   # dark_cyan
