@@ -78,16 +78,12 @@ alias kgsec='kubectl get secret'
 alias kgj='kubectl get job'
 alias fqdn="kubectl get ingress -o json | jq '.items[] | .metadata.namespace + \": \" + .metadata.annotations.\"external-dns.alpha.kubernetes.io/hostname\"'"
 alias fqdna="kubectl get ingress --all-namespaces -o json | jq '.items[] | .metadata.namespace + \": \" + .metadata.annotations.\"external-dns.alpha.kubernetes.io/hostname\"'"
-#Kubernetes + Teleport
+
+#===================================
+# Kubernetes + Teleport
+#===================================
 alias tkl='tsh kube ls'
-kutil () {
-        for host in $(kubectl get nodes --no-headers | cut -d' ' -f1)
-        do
-                echo "$host - $(kubectl get nodes -o jsonpath='{.metadata.labels.topology\.kubernetes\.io/zone}' $host)"
-                kubectl describe node "$host" | grep --color Allocated -A 5 | grep --color -ve Event -ve Allocated -ve percent -ve --
-                echo
-        done
-}
+
 #===================================
 # USEFUL / CONVIENENCE
 #===================================

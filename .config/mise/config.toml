@@ -1,5 +1,6 @@
 [tools]
 awscli = { version = "latest", symlink_bins = "true" }
+flux2 = "latest"
 fzf = "latest"
 go = "1.26.3"
 kubecolor = "latest"
@@ -12,4 +13,6 @@ ripgrep = "latest"
 starship = "latest"
 teleport-ent = "latest"
 terraform = "1.9.8"
+terragrunt = "0.99.1"
+yq = "latest"
 zellij = "latest"

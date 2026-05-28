@@ -51,3 +51,8 @@ source ~/.local/share/fzf-tab/fzf-tab.plugin.zsh
 source ~/.config/themes/fzf-challengerdeep.sh
 
 eval "$(starship init zsh)"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)

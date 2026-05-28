@@ -30,6 +30,7 @@ $package\
 $golang\
 $helm\
 $terraform\
+${custom.terragrunt}\
 $nim\
 $nodejs\
 $python\
@@ -242,6 +243,15 @@ symbol = '󰘬'
 [terraform]
 format = '[─](fg:current_line)[ $symbol ](fg:primary bg:color4)([ $version ](fg:foreground bg:box))'
 symbol = '󱁢'
+
+###
+# Configures the terragrunt module (custom, no native starship support)
+###
+[custom.terragrunt]
+command = "terragrunt --version 2>/dev/null | grep -oE 'v[0-9]+\\.[0-9]+\\.[0-9]+'"
+when = "test -f terragrunt.hcl"
+format = '[─](fg:current_line)[ $symbol ](fg:primary bg:color4)([ $output ](fg:foreground bg:box))'
+symbol = 'TG'
 
 ###
 # Configures the nodejs module
