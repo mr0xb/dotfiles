@@ -34,6 +34,12 @@ alias diff='colordiff --side-by-side --suppress-common-lines'
 alias header='curl -I'
 alias headerc='curl -I --compress'
 
+
+#===================================
+# BREW
+#===================================
+alias brewdump='brew bundle dump --global'
+
 #===================================
 # AWS & INFRA-TOOLS
 #===================================
@@ -42,7 +48,9 @@ alias ac='aws-cred'
 alias av='aws-vault'
 alias tg='terragrunt'
 
-#Terraform / Terragrun
+#===================================
+# TERRAFORM / TERRAGRUNT
+#===================================
 alias tgp="terragrunt plan"
 alias tgps="terragrunt plan --terragrunt-source-update"
 alias tglo="terragrunt providers lock -platform=linux_arm64 -platform=linux_amd64 -platform=darwin_amd64 -platform=darwin_arm6"
@@ -54,7 +62,9 @@ alias tgi="terragrunt init"
 alias tgis="terragrunt init --terragrunt-source-update"
 alias tgo="terragrunt output"
 
-#Kuberenetes
+#===================================
+# KUBERNETES
+#===================================
 alias kx='kubectx'
 alias kn='kubens'
 alias ku='kustomize'
@@ -80,7 +90,7 @@ alias fqdn="kubectl get ingress -o json | jq '.items[] | .metadata.namespace + \
 alias fqdna="kubectl get ingress --all-namespaces -o json | jq '.items[] | .metadata.namespace + \": \" + .metadata.annotations.\"external-dns.alpha.kubernetes.io/hostname\"'"
 
 #===================================
-# Kubernetes + Teleport
+# TELEPORT
 #===================================
 alias tkl='tsh kube ls'
 
