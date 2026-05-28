@@ -1,8 +1,5 @@
 [ -f $HOME/.config/.vault ] && source ~/.config/.vault
-<<<<<<< HEAD
-=======
 [ -f $HOME/.vault-token ] && source ~/.vault-token
->>>>>>> 64f3fcd (updates)
 
 export AWS_VAULT_BACKEND=keychain
 export AWS_VAULT_KEYCHAIN_NAME="aws-vault"
