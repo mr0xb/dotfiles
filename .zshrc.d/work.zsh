@@ -1,4 +1,4 @@
-source ~/.config/.vault
+[ -f $HOME/.config/.vault ] && source ~/.config/.vault
 
 export AWS_VAULT_BACKEND=keychain
 export AWS_VAULT_KEYCHAIN_NAME="aws-vault"
