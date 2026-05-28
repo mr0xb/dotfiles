@@ -166,6 +166,6 @@ PATH="/opt/homebrew/opt/findutils/libexec/gnubin:$PATH"
 export GPG_TTY=$(tty)
 
 
-# Load Angular CLI autocompletion.
+ # Load Angular CLI autocompletion.
 source <(ng completion script)
 alias config='/usr/bin/git --git-dir=/Users/steve.briggs/.cfg/ --work-tree=/Users/steve.briggs'
