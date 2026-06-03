@@ -1,0 +1,24 @@
+#!/bin/bash
+
+source "$CONFIG_DIR/colors.sh"
+
+mic=(
+ script="$PLUGIN_DIR/mic/mic.sh"
+ click_script="$PLUGIN_DIR/mic/mic_click.sh"
+ icon.color=0xffffffff
+ icon.padding_right=4
+ icon.padding_left=4
+ label.padding_right=4
+ label.padding_left=4
+ background.color=$BACKGROUND_2
+ background.corner_radius=8
+ background.height=28
+ background.drawing=on
+ icon.font="0xProto Nerd Font Mono:Bold:30.0"
+ label.color=0xffffffff
+ label.font="0xProto Nerd Font Mono:Bold:15.0"
+)
+
+sketchybar --add item mic right \
+           --set mic "${mic[@]}" \
+           --subscribe mic volume_change

@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+# Prints the target path; use with:
+#   cd "$(sidestep <region> [nonprod|prod])"
+# Or add this wrapper to ~/.zshrc so plain "sidestep <region>" cds directly:
+#   sidestep() { local d; d="$(command sidestep "$@")" && cd "$d"; }
+
+set -euo pipefail
+
+region="${1-}"
+env="${2-}"
+
+if [[ -z "$region" ]]; then
+    echo "sidestep: usage: sidestep <region> [nonprod|prod]" >&2
+    exit 1
+fi
+
+# Split PWD into path segments; IFS scoped to read only — avoids the bash 3.2
+# bug that corrupts ${array[*]:offset:N} when a local IFS is set.
+IFS='/' read -ra segs <<< "$PWD"
+
+# Locate the *-hosting segment (0-indexed).
+idx=-1
+for i in "${!segs[@]}"; do
+    if [[ "${segs[$i]}" == *-hosting ]]; then
+        idx=$i
+        break
+    fi
+done
+
+if [[ $idx -eq -1 ]]; then
+    echo "sidestep: not inside a *-hosting directory" >&2
+    exit 1
+fi
+
+# Determine the target tier: keep current unless an env was given.
+tier="${segs[$idx]}"
+case "$env" in
+    '')      ;;
+    nonprod) tier="staging-hosting" ;;
+    prod)    tier="prod-hosting" ;;
+    *)
+        echo "sidestep: unknown env '$env' (expected nonprod or prod)" >&2
+        exit 1
+        ;;
+esac
+
+# prefix = everything before the tier segment, joined by /.
+# Uses printf to avoid the bash 3.2 0x7f corruption from ${array[*]:...} with custom IFS.
+prefix=$(printf '%s/' "${segs[@]:0:$idx}")
+prefix="${prefix%/}"
+
+# subpath = everything after the region segment (tier+2 onward), preserved as-is.
+sub_start=$((idx + 2))
+sub=("${segs[@]:$sub_start}")
+
+dest="${prefix}/${tier}/${region}"
+if [[ ${#sub[@]} -gt 0 ]]; then
+    subpath=$(printf '%s/' "${sub[@]}")
+    dest="${dest}/${subpath%/}"
+fi
+
+if [[ ! -d "$dest" ]]; then
+    echo "sidestep: directory does not exist: $dest" >&2
+    exit 1
+fi
+
+printf '%s\n' "$dest"

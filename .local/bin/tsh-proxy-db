@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+# Usage: run from a directory containing terragrunt.hcl with a postgres provider block
+set -euo pipefail
+
+TERRAGRUNT_HCL="${PWD}/terragrunt.hcl"
+
+if [[ ! -f "$TERRAGRUNT_HCL" ]]; then
+    echo "error: no terragrunt.hcl found in current directory" >&2
+    exit 1
+fi
+
+# Extract the db_ports key from the postgres provider block
+# Matches: port = "${local.common_vars.locals.db_ports["some_key"]}"
+DB_PORT_KEY=$(grep -oP 'db_ports\["\K[^"]+' "$TERRAGRUNT_HCL" | head -1)
+
+if [[ -z "$DB_PORT_KEY" ]]; then
+    echo "error: could not find db_ports key in postgres provider block of terragrunt.hcl" >&2
+    exit 1
+fi
+
+# Walk up directory tree to find common.hcl
+find_parent_file() {
+    local dir
+    dir="$(dirname "$1")"
+    while [[ "$dir" != "/" ]]; do
+        if [[ -f "$dir/$2" ]]; then
+            echo "$dir/$2"
+            return 0
+        fi
+        dir="$(dirname "$dir")"
+    done
+    return 1
+}
+
+COMMON_HCL=$(find_parent_file "$TERRAGRUNT_HCL" "common.hcl" || true)
+
+if [[ -z "$COMMON_HCL" ]]; then
+    echo "error: could not find common.hcl in any parent directory" >&2
+    exit 1
+fi
+
+# Extract port value for the key using yq
+DB_PORT=$(yq -oy -r ".[].db_ports[\"${DB_PORT_KEY}\"]" "$COMMON_HCL")
+
+if [[ -z "$DB_PORT" || "$DB_PORT" == "null" ]]; then
+    echo "error: no port found for key '${DB_PORT_KEY}' in ${COMMON_HCL}" >&2
+    exit 1
+fi
+
+# Derive teleport DB name: saas_psql_prod_usw2 -> saas-psql-prod-usw2
+TSH_DB_NAME=$(echo "$DB_PORT_KEY" | tr '_' '-')
+
+echo "db port key : ${DB_PORT_KEY}"
+echo "common.hcl  : ${COMMON_HCL}"
+echo "port        : ${DB_PORT}"
+echo "tsh db name : ${TSH_DB_NAME}"
+echo ""
+echo "running: tsh proxy db --tunnel --db-user immuta_admin --db-name postgres --port ${DB_PORT} ${TSH_DB_NAME}"
+echo ""
+
+exec tsh proxy db --tunnel \
+    --db-user immuta_admin \
+    --db-name postgres \
+    --port "$DB_PORT" \
+    "$TSH_DB_NAME"
